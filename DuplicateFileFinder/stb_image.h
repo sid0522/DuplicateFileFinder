@@ -1,11 +1,5 @@
 //
 //  stb_image.hpp
-//  DuplicateFileFinder
-//
-//  Created by Conceptic Labs on 30/05/18.
-//  Copyright © 2018 SIDDHARTH. All rights reserved.
-//
-
 /* stb_image - v2.19 - public domain image loader - http://nothings.org/stb
  no warranty implied; use at your own risk
  Do this:

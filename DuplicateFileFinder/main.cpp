@@ -61,7 +61,6 @@ void searchFolder( std::string curr_folder, std::string extension )
 int main(int argc, char* argv[])
 {
     std::string extension = ".png";
-    //std::string curr_directory = "/Users/tilt_01/Desktop/Images for iOS/new";
     std::string curr_directory = "../resource";
     searchFolder(curr_directory, extension);
     int remove( const char* fileName );
@@ -83,9 +82,6 @@ int main(int argc, char* argv[])
             int tempy = y;
             int tempn = n;
             int tempalpha = alpha;
-            //std::string tempData( reinterpret_cast<char const*>(data));
-            //tempData = *data;
-            //unsigned char** tempData = &data;
             
             std::cout << "data = " << fileList[i] << std::endl;
             if( !data )
@@ -103,14 +99,9 @@ int main(int argc, char* argv[])
                 int tempn1 = n1;
                 int tempalpha1 = alpha1;
                 
-                //std::string tempData1( reinterpret_cast<char const*>(data1));
-                //unsigned char** tempData1 = &data1;
-                //char tempData1;
-                //tempData1 = *data1;
                 std::cout << "data1 = " << fileList[j] << std::endl;
                 
                 if( (tempx == tempx1) && (tempy == tempy1) && (tempn == tempn1) && (tempalpha == tempalpha1) )
-                //if( data == data1 )
                 {
                     std::cout << "same file" << std::endl;
                     deleteFiles.push_back( fileList[j].c_str());
