@@ -20,19 +20,6 @@ std::vector< std::string > fileList;
 std::vector < std::string > deleteFiles;
 std::vector < std::string > tempData;
 
-/*char* loadImage( std::vector < std:: string > fileList, int x, int y, int n, unsigned char* data )
-{
-    if( fileList.size() )
-    {
-        std::cout << fileList.size() << " image files" << std::endl;
-        for( unsigned int i = 0; i < fileList.size(); ++i )
-        {
-            unsigned char* data = stbi_load(fileList[i].c_str(), &x, &y, &n, 0 );
-        }
-    }
-    return (char*) data;
-}*/
-
 void searchFolder( std::string curr_folder, std::string extension )
 {
     DIR* dir_point = opendir( curr_folder.c_str() );
